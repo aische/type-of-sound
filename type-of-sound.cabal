@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                type-of-sound
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            creating sound from synthesizer types
 -- description:         
 license:             BSD3
@@ -21,7 +21,7 @@ library
   -- other-extensions:    
   ghc-options:         -O2
   exposed-modules:     DrawWave, Rational, SaveWave, Sound1, Sound2, SoundBase, WavFile
-  build-depends:       base >=4.9 && <4.10, array, ghc-prim, random, terminal-size, proxy-mapping
+  build-depends:       base >=4.9 && <4.10, array, random, terminal-size, proxy-mapping
   hs-source-dirs:      src
   default-language:    Haskell2010
 
@@ -30,6 +30,6 @@ executable type-of-sound
   ghc-options:         -O2
   other-modules:       DrawWave, Rational, SaveWave, Sound1, Sound2, SoundBase, WavFile
   -- other-extensions:    
-  build-depends:       base >=4.9 && <4.10, array, ghc-prim, random, terminal-size, proxy-mapping, type-of-sound
+  build-depends:       base >=4.9 && <4.10, array, random, terminal-size, proxy-mapping, type-of-sound
   hs-source-dirs:      src
   default-language:    Haskell2010

@@ -4,12 +4,10 @@
 {-# language TypeOperators #-}
 module Rational where
 
-import qualified GHC.Prim as GHC
 import GHC.TypeLits
 import Data.Proxy
 import Data.Proxy.Mapping
 import Data.Ratio
-import Data.Kind
 
 data (n :: Nat) :%: (d :: Nat)
 
